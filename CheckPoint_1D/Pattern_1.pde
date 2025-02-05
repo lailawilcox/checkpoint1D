@@ -3,24 +3,23 @@ void pattern1() {
   int y = 0;
   int i = 0;
 
-  fill(red);
+  fill(medPink);
+  noStroke();
   rect(0, 0, 500, 500);
 
   while (i <= 10) {
     if (x <= 500) {
-      noStroke();
-      fill(black);
-      circle(x, y, 50);
 
-      stroke(#000000);
-      fill(red);
+      stroke(darkPink);
+      fill(medPink);
       circle(x-10, y-10, 20);
       circle(x+10, y+10, 20);
-      fill(darkRed);
+      fill(lightPink);
       circle(x+10, y-10, 20);
       circle(x-10, y+10, 20);
 
-      fill(yellow);
+      fill(darkPink);
+      stroke(lightPink);
       circle(x, y, 12);
 
       x = x+50;

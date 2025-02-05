@@ -6,15 +6,19 @@ color black = #000000;
 color white = #FFFFFF;
 
 //pattern 1
-color yellow = #F8DA88;
-color red = #912F40;
-color darkRed = #7A2432;
+color darkPink = #FE636E;
+color medPink = #FEBAC6;
+color lightPink = #FFDEE3;
 
 //patern 2
 color darkBlue = #1F2772;
 color medBlue = #3F5BC2;
 color lightBlue = #6683E3;
 
+//patern 2
+color darkGreen = #304A3C;
+color medGreen = #59886F;
+color lightGreen = #77A68E;
 
 
 //variables
@@ -24,5 +28,5 @@ void setup() {
 }
 
 void draw() {
-  pattern2();
+  pattern3();
 }
