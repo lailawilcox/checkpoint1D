@@ -1,7 +1,7 @@
 void pattern2() {
   fill(lightBlue);
   noStroke();
-  rect(0, 0, 500, 500);
+  rect(250, 250, 500, 500);
 
   pushMatrix();
   translate(250, 605);

@@ -22,11 +22,24 @@ color lightGreen = #77A68E;
 
 
 //variables
+int mode = 2;
 
 void setup() {
   size(500, 500);
+  rectMode(CENTER);
+  textAlign(CENTER);
 }
 
 void draw() {
-  pattern3();
+
+  if (mode == 1) {
+    pattern1();
+  } else if (mode == 3) {
+    pattern3();
+  } else {
+    pattern2();
+  }
+  
+  buttonLeft();
+  buttonRight();
 }

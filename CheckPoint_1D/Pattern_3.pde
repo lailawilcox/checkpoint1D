@@ -1,7 +1,7 @@
 void pattern3() {
   fill(medGreen);
   noStroke();
-  rect(0, 0, 500, 500);
+  rect(250, 250, 500, 500);
   
   stroke(darkGreen);
   circles();
@@ -15,8 +15,8 @@ void circles() {
   float x = -25;
   float y = -50;
 
-  while (y <= 550) {
-    x = -25;
+  while (y <= 500) {
+    x = -45;
     while (x <= 550) {
       
       strokeWeight(2);

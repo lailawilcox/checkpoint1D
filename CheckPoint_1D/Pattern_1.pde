@@ -5,7 +5,8 @@ void pattern1() {
 
   fill(medPink);
   noStroke();
-  rect(0, 0, 500, 500);
+  rect(250, 250, 500, 500);
+  strokeWeight(1);
 
   while (i <= 10) {
     if (x <= 500) {
