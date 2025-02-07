@@ -10,21 +10,18 @@ void pattern2() {
   lines();
   popMatrix();
 
-  int c = 0;
   float x = 39;
   float y = 39;
   boolean shift = true;
 
 
-  while (c < 25) {
+  while (y < 600) {
 
     pushMatrix();
     translate(x, y);
     crossHair();
     popMatrix();
     x = x+141;
-
-    c++;
 
     if (x > 500) {
       y = y+70.6;
@@ -65,7 +62,7 @@ void crossHair() {
   fill(medBlue);
   strokeWeight(1);
   rect(0, 0, 25, 25);
-  
+
   strokeWeight(1);
   stroke(darkBlue);
   fill(darkBlue);
