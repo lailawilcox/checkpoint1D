@@ -2,11 +2,14 @@ void pattern3() {
   fill(medGreen);
   noStroke();
   rect(250, 250, 500, 500);
-  
+
   stroke(darkGreen);
   circles();
   pushMatrix();
-  translate(42, 25);
+  translate(42 + m3, 25);
+  stroke(lightGreen);
+  circles();
+  stroke(darkGreen, c3);
   circles();
   popMatrix();
 }
@@ -17,8 +20,8 @@ void circles() {
 
   while (y <= 500) {
     x = -45;
-    while (x <= 550) {
-      
+    while (x <= 545) {
+
       strokeWeight(2);
       noFill();
       circle(x, y, 100);

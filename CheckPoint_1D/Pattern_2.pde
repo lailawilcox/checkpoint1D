@@ -1,4 +1,5 @@
 void pattern2() {
+
   fill(lightBlue);
   noStroke();
   rect(250, 250, 500, 500);
@@ -16,6 +17,7 @@ void pattern2() {
 
 
   while (c < 25) {
+
     pushMatrix();
     translate(x, y);
     crossHair();
@@ -25,12 +27,12 @@ void pattern2() {
     c++;
 
     if (x > 500) {
-      y = y+70.5;
+      y = y+70.6;
       shift = !shift;
       if (shift) {
-        x = 39;
+        x = 39.5;
       } else {
-        x = 109.5;
+        x = 109.2;
       }
     }
   }
@@ -41,7 +43,7 @@ void lines() {
   int xM = -150;
   int c = 0;
 
-  while (c < 12) {
+  while (c < 8) {
     stroke(darkBlue);
     strokeWeight(25);
     line(-100, yD, 600, yD);
@@ -57,13 +59,16 @@ void lines() {
 }
 
 void crossHair() {
-  strokeWeight(1);
-
+  pushMatrix();
+  rotate(-PI/r2);
   stroke(medBlue);
   fill(medBlue);
-  triangle(-1, 18, -18, 1, -1, -16);
-
+  strokeWeight(1);
+  rect(0, 0, 25, 25);
+  
+  strokeWeight(1);
   stroke(darkBlue);
   fill(darkBlue);
-  triangle(-1, 18, 16, 1, -1, -16);
+  triangle(-12.5, -12.5, -12.5, 12.5, 12.5, -12.5);
+  popMatrix();
 }

@@ -13,11 +13,11 @@ void pattern1() {
 
       stroke(darkPink);
       fill(medPink);
-      circle(x-10, y-10, 20);
-      circle(x+10, y+10, 20);
+      circle(x-10+dx1, y-10, 20);
+      circle(x+10-dx1, y+10, 20);
       fill(lightPink);
-      circle(x+10, y-10, 20);
-      circle(x-10, y+10, 20);
+      circle(x+10, y-10+ly1, 20);
+      circle(x-10, y+10-ly1, 20);
 
       fill(darkPink);
       stroke(lightPink);
@@ -30,4 +30,5 @@ void pattern1() {
       i++;
     }
   }
+  stroke(darkPink);
 }
